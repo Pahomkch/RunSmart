@@ -75,4 +75,10 @@
             }
         }
     }
+    .consultation {
+        padding: 50px 20px 40px;
+        &__description {
+            margin-top: 50px;
+        }
+    }
 }

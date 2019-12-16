@@ -78,4 +78,15 @@
             }
         }
     }
+
+    .title_left {
+        font-size: 26px;
+    }
+    .consultation {
+        padding: 50px 20px 40px;
+        min-height: 400px;
+        &__description {
+            margin-top: 50px;
+        }
+    }
 }

@@ -68,4 +68,20 @@
             font-size: 12px;
         }
     }
+    .title_left {
+        font-size: 16px;
+        text-align: center;
+    }
+    .consultation {
+        padding: 50px 0 40px;
+        text-align: center;
+        min-height: 400px;
+        &__description {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+    .form_consultation {
+        width: 100%;
+    }
 }
