@@ -82,4 +82,12 @@
             margin-top: 60px;
         }
     }
+    .corusel {
+        &__inner {
+            width: 500px;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

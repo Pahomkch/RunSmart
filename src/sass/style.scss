@@ -5,6 +5,7 @@
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
 }
@@ -15,7 +16,8 @@
 @import 'blocks/title';
 @import 'blocks/consultation';
 @import 'blocks/forms';
-
+@import 'blocks/corusel';
+@import 'blocks/catalog';
 
 @import 'mediafiles/991';
 @import 'mediafiles/767';

@@ -1,0 +1,59 @@
+.corusel {
+    padding: 108px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -66px;
+    width: 30px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    background: url('../../icons/left.svg') center (center / cover) no-repeat;
+}    
+
+.next {
+    left: auto;
+    right: -66px;
+    background: url('../../icons/right.svg') center (center / cover) no-repeat;
+}
+
+.corusel__inner {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}    
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    li {
+        margin: 0 5px;
+    }
+    button {
+        border: none;
+        border-radius: 100%;
+        background-color: black;
+        color: black;
+        width: 15px;
+        height: 15px;
+        font-size: 0;
+    }
+    .slick-active button {
+        background-color: $main-color;
+        color: $main-color;
+
+    }
+    
+}

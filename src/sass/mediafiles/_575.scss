@@ -89,4 +89,43 @@
             margin-top: 50px;
         }
     }
+    .corusel {
+        &__inner {
+            width: 300px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        .title {
+            font-size: 30px;
+        }
+        &__tabs {
+            margin: 20px 0;
+        }
+        &__tab {
+            font-size: 15px;
+            width: 160px;
+        }
+        &-item {
+            width: 250px;
+            &__content {
+                width: 210px;
+            }
+            &__list {
+                width: 210px;
+                &_active {
+                    transform: translateX(calc(-100% - 20px));
+                }
+            }
+            &__now-price {
+                font-size: 16px;
+            }
+            .button_mini {
+                width: 100px;
+            }
+
+        }
+    }
 }
