@@ -84,4 +84,25 @@
     .form_consultation {
         width: 100%;
     }
+
+    /* **************_CATALOG_****************** */
+
+    .catalog {
+        .title {
+            font-size: 20px;
+        }
+        &__tabs {
+            margin: 20px 0;
+        }
+        &__tab {
+            font-size: 11px;
+            width: 90px;
+            &__text_phone-screen {
+                display: inline-block;
+            }
+            &__text_hight-screen {
+                display: none;
+            }
+        }
+    }
 }
