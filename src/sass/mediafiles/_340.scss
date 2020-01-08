@@ -106,7 +106,7 @@
         }
     }
 
-    /* **************_CATALOG_****************** */
+    /* **************FEEDS****************** */
 
     .feeds {
         &__item {
@@ -117,4 +117,21 @@
         }
     }
 
+    /* **************FOOTER****************** */
+    .footer {
+        &__info {
+            padding: 30px 10px;
+            width:300px;
+            height: 250px;
+        }
+        &__address {
+            font-size: 16px;
+        }
+        &__phone-link {
+            font-size: 16px;
+        }
+        &__social-links {
+            width: 190px;
+        }
+    }
 }

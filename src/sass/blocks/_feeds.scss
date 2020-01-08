@@ -19,6 +19,9 @@
         }
         &__text-wrapper {
             width: 450px;
+            p {
+                margin-bottom: 0;
+            }
         }
         &__title {
             color: #0d0d0d;
