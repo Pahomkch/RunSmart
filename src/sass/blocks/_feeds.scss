@@ -1,0 +1,48 @@
+.feeds {
+    display: flex;
+    flex-direction: column;
+    min-height: 950px;
+    padding-bottom: 70px;
+    .title {
+        margin-bottom: 70px;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__photo {
+            height: 170px;
+            width: 170px;
+            margin-right: 62px;
+        }
+        &__text-wrapper {
+            width: 450px;
+        }
+        &__title {
+            color: #0d0d0d;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        &__subtitle {
+            color: #646464;
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 19px;
+            line-height: 1;
+        }
+        &__text {
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 300;
+            span {
+                display: block;
+                margin-top: 24px;
+                line-height: 1;
+            }
+        }
+    }
+}

@@ -105,4 +105,16 @@
             }
         }
     }
+
+    /* **************_CATALOG_****************** */
+
+    .feeds {
+        &__item {
+            &__text-wrapper {
+                width: 320px;
+                text-align: center;
+            }
+        }
+    }
+
 }
