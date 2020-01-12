@@ -1,0 +1,71 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 400px;
+    background-color: #f2f2f2;
+    text-align: center;
+    display: none;
+    &__close {
+        position: absolute;
+        top: -8px;
+        right: -40px;
+        font-size: 40px;
+        color: $main-color;
+        line-height: 0.8;
+        cursor: pointer;
+    }
+    &-consultation {
+        padding: 40px;
+        &__subtitle {
+            color: #0d0d0d;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        &__description {
+            color: #0d0d0d;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    &-order {
+        padding: 40px;
+        &__subtitle {
+            color: #0d0d0d;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        &__description {
+            color: #0d0d0d;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    &-thanks {
+        width: 380px;
+        min-height: 140px;
+        padding: 40px;
+        &__subtitle {
+            color: #0d0d0d;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        &__description {
+            color: #0d0d0d;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+

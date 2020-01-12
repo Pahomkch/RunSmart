@@ -3,6 +3,7 @@
 * {
     margin: 0;
     font-family: 'Museo Sans Cyrl 500';
+    position: relative;
 }
 .container {
     position: relative;
@@ -20,6 +21,7 @@
 @import 'blocks/catalog';
 @import 'blocks/feeds';
 @import 'blocks/footer';
+@import 'blocks/modals';
 
 @import 'mediafiles/991';
 @import 'mediafiles/767';

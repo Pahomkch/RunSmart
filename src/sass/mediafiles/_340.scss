@@ -104,6 +104,12 @@
                 display: none;
             }
         }
+        &__content {
+            &_active {
+                justify-content: center;
+            }
+        }
+
     }
 
     /* **************FEEDS****************** */
@@ -133,5 +139,37 @@
         &__social-links {
             width: 190px;
         }
+    }
+
+    /* **************MODAL POP-UP****************** */
+    .modal {
+        width: 100%;
+        &__close {
+            top: 0;
+            right: 7px;
+        }
+        &-consultation {
+            padding: 20px;
+            &__subtitle {
+                font-size: 16px;
+            }
+            &__description {
+                font-size: 14px;
+            }
+        }
+        &-order {
+            padding: 20px;
+        }
+        &-thanks {
+            width: 100%;
+            min-height: 140px;
+            padding: 20px;
+            &__subtitle {
+                font-size: 15px;
+            }
+        }
+    }
+    .button_consultation {
+        width: 100%;
     }
 }
