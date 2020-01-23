@@ -52,7 +52,7 @@
                 <button data-modal='consultation' class="button button_main">заказать консультацию</button>
                 <div class="promo__links">
                     или
-                    <a href="#tabs">перейти в каталог</a>
+                    <a href="#">перейти в каталог</a>
                 </div>
             </div> <!-- promo__wrapper --> 
         </div> <!-- container -->
@@ -92,7 +92,7 @@
                         правильной технике бега! 
                         Дружим с крупнейшей школой 
                         бега в России - 
-                        <a href="#corusel" class="advanages__link">I LOVE RUNNING.</a>
+                        <a href="#" class="advanages__link">I LOVE RUNNING.</a>
 
                     </div>
                 </div>
@@ -107,7 +107,7 @@
         <div class="consultation__description">Просто заполните форму заявки <br>
             и мы перезвоним вам в течении 10 минут</div>
         <form action="#" class="form form_consultation">
-            <input  placeholder="Ваше имя" type="text" name="name">
+            <input required placeholder="Ваше имя" type="text" name="name">
             <input required placeholder="Ваш номер телефона" name="phone">
             <input required placeholder="Ваш E-mail" type="email" name="email">
             <button class="button button_consultation">заказать кОНСУЛЬТАЦИЮ</button>
@@ -116,7 +116,7 @@
         </div> <!-- container -->
     </section> <!-- consultation -->
     
-    <section class="corusel" id="corusel">
+    <section class="corusel">
         <div class="container">
             <div class="corusel__inner">
                 <div class="div"><img src="img/slide_1.jpg" alt="image1"></div>
@@ -131,7 +131,7 @@
         <div class="container">
             <div class="title">Каталог пульсометров</div>
 
-            <ul class="catalog__tabs" id="tabs">
+            <ul class="catalog__tabs">
                 <li class="catalog__tab catalog__tab_active">
                     <div class="catalog__tab__text_hight-screen">Для фитнеса</div>
                     <div class="catalog__tab__text_phone-screen">фитнес</div>
@@ -409,21 +409,21 @@
             <div class="modal__close">&times;</div>
             <h3 class="modal-consultation__subtitle">Просто заполните форму заявки</h3>
             <div class="modal-consultation__description">и мы перезвоним вам в течении 10 минут</div>
-            <form action="send.php" class="form form_consultation form_mt25" id="consultation_js">
+            <form action="#" class="form form_consultation form_mt25">
                 <input required placeholder="Ваше имя" type="text" name="name">
-                <input required placeholder="Ваш номер телефона" type="tel" name="phone">
+                <input required placeholder="Ваш номер телефона" name="phone">
                 <input required placeholder="Ваш E-mail" type="email" name="email">
                 <button class="button button_consultation">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
 
-        <div class="modal modal-order" id="js_order">
+        <div class="modal modal-order" id="order">
             <div class="modal__close">&times;</div>
             <h3 class="modal-order__subtitle">Ваш заказ:</h3>
             <div class="modal-order__description">catalog-item__subtitle</div>
-            <form action="#" class="form form_consultation form_mt25" id="order">
+            <form action="#" class="form form_consultation form_mt25">
                 <input required placeholder="Ваше имя" type="text" name="name">
-                <input required placeholder="Ваш номер телефона" type="tel" name="phone">
+                <input required placeholder="Ваш номер телефона" name="phone">
                 <input required placeholder="Ваш E-mail" type="email" name="email">
                 <button class="button button_consultation">купить</button>
             </form>
@@ -457,7 +457,6 @@
 -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
 

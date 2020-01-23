@@ -24,9 +24,6 @@ $(document).ready(function(){
 	
 });
 
-
-/* ***************CATALOG ****************/
-
 $(document).ready(function(){
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
     $(this)
@@ -93,7 +90,6 @@ $(document).ready(function(){
 							*/
 
 /*****************  popUp modal *******************/
-
 	function modal_close(modal) {
 		$('.modal__close').on('click', function() {
 			$('.overlay').fadeOut('slow')
@@ -116,67 +112,15 @@ $(document).ready(function(){
 
 	$('.button_mini').each(function(i){
 		$(this).on('click', function() {
-			$('.modal-order .modal-order__description').text($('.catalog-item__subtitle').eq(i).text());
-			$('.overlay, .modal-order').fadeIn('slow');
+			$('#order .modal-order__description').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn('slow');
 		})
 	});
 	
-	modal_close('.modal-order');
+	modal_close('#order');
 	
-	function validate_form(form_selector) {
-		$(form_selector).validate({
-			rules: {
-				name: {
-					required: true,
-					minlength: 2,
-				},
-				email: {
-					required: true,
-					email: true,
-				}	
-			},
-			messages: {
-				name: {
-					required: "Введите ваше имя",
-					minlength: jQuery.validator.format("Минимум {0} буквы")
-				},
-				phone: "Введите ваш телефон",
-				email: {
-				  required: "Введите email для и мы вам напишем",
-				  email: "Ваш email должен выглядеть так: name@domain.com"
-				}
-			}
-		});
-	}
+/*****************  validate form with JQuery mask input *******************/
 
-	validate_form('.consultation .form_consultation');
-	validate_form('#consultation_js');
-	validate_form('#order');
-
-	/* *******************************_PHONE_MAKSK_********************** */
-	$('input[name=phone]').mask("+7(999) 99-99-999", {placeholder: "_"});
-	
-
-
-
-	/* ****************Отправка EMAIL с сайта *********************/
-
-	$('form').submit(function(e){
-		e.preventDefault();
-		$.ajax({
-			type: 'POST',
-			url: 'mailer/smart.php',
-			data: $(this).serialize()
-		}).done (function() {
-			$(this).find('input').val("");
-			$('#consultation, #js_order').fadeOut('slow');
-			$('.overlay, #thanks').fadeIn('slow');
-
-			$('form').trigger('reset');
-		});
-		return false;
-	});
-
-
+	$('input[name=phone]').mask("+7(999) 999-9999",{placeholder:"_"});
 	
 });
