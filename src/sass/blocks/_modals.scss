@@ -67,5 +67,14 @@
             font-weight: 500;
         }
     }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+    }
+    .valid {
+        border: 1px solid green;
+    }
 }
 

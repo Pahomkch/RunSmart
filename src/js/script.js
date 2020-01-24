@@ -119,8 +119,41 @@ $(document).ready(function(){
 	
 	modal_close('#order');
 	
-/*****************  validate form with JQuery mask input *******************/
+/***************** Mask form with JQuery mask input *******************/
 
 	$('input[name=phone]').mask("+7(999) 999-9999",{placeholder:"_"});
+
+	/***************** Validate form with JQuery validate *******************/
+
 	
+	function validateForm(form) {
+		$(form).validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				},
+				phone: 'required',
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Введите своё имя",
+				phone: "Введите ваш телефон",
+				email: {
+					required: "Введите ваше e-mail",
+					email: "Формат e-mail должен быть: name@domain.com"
+				}
+			}
+		});	
+	}
+	
+	validateForm('.form_consultation'); 
+	validateForm('#consultation form');  
+	validateForm('#order form');  
+
+
+
 });
