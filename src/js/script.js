@@ -123,7 +123,7 @@ $(document).ready(function(){
 
 	$('input[name=phone]').mask("+7(999) 999-9999",{placeholder:"_"});
 
-	/***************** Validate form with JQuery validate *******************/
+/***************** Validate form with JQuery validate *******************/
 
 	
 	function validateForm(form) {
@@ -154,6 +154,23 @@ $(document).ready(function(){
 	validateForm('#consultation form');  
 	validateForm('#order form');  
 
+/***************** Send e-mail from site with PHP Mailer *******************/
 
+
+	$('form').submit(function(e){
+		e.preventDefault();
+		$.ajax({
+			type: 'POST',
+			url: 'mailer/smart.php',
+			data: $(this).serialize()
+		}).done (function() {
+			$(this).find('input').val("");
+			$('#consultation, #js_order').fadeOut('slow');
+			$('.overlay, #thanks').fadeIn('slow');
+
+			$('form').trigger('reset');
+		});
+		return false;
+	});
 
 });
