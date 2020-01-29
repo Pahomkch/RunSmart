@@ -90,9 +90,10 @@ $(document).ready(function(){
 							*/
 
 /*****************  popUp modal *******************/
+
 	function modal_close(modal) {
 		$('.modal__close').on('click', function() {
-			$('.overlay').fadeOut('slow')
+			$('.overlay, #thanks').fadeOut('slow')
 			$(modal).fadeOut('slow')
 		});
 	};
@@ -103,7 +104,7 @@ $(document).ready(function(){
 	});
 	modal_close('#consultation');
 
-	/*take order PopUp *********************/  
+/**********************take order PopUp *********************/  
 
 
 /* 	$('[data-modal=order]').on('click', function() {
@@ -148,7 +149,7 @@ $(document).ready(function(){
 				}
 			}
 		});	
-	}
+	};
 	
 	validateForm('.form_consultation'); 
 	validateForm('#consultation form');  
@@ -173,4 +174,26 @@ $(document).ready(function(){
 		return false;
 	});
 
+	
+	
+/* ************************smooth_scroll************************** */
+
+	$("a[href^='#']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+	});
+		
+	
+	/* ********************arrow_to_top******************** */
+	
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1000) {
+			$('.arrow-to-top').fadeIn();
+		} else {
+			$('.arrow-to-top').fadeOut();
+		}
+	});
+	
+	
 });
