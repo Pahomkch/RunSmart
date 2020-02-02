@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"> -->
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <link rel="stylesheet" href="css/style.min.css">
     <title>Smart Run</title>
 </head>
 <body>
-    <a href="#topSite" title="Вверх" class="arrow-to-top">
+    <a href="#topSite" title="Вверх" class="arrow-to-top bounceInRight animated">
         <img src="icons/to-top.svg" alt="arrow-to-top" class="img_arrow-to-top">
     </a>
     <section class="promo" id="topSite">
@@ -77,7 +78,7 @@
                     </div>
                 </div>
                 <div class="advantages__icon">
-                    <img src="icons/advantages/heart.png" alt="heart.png" class="advantages_img">
+                    <img src="icons/advantages/heart.png" alt="heart.png" class="wow heartBeat slow" data-wow-iteration="infinite">
                     <div class="advantages__discription">
                         <h5 class="advantages__discription_header">Заботимся о здоровье</h5>
                         Мы работаем для того, 
@@ -364,7 +365,7 @@
         <div class="container">
             <div class="title">отзывы клиентов</div>
 
-            <div class="feeds__item">
+            <div class="feeds__item flipInX wow" data-wow-offset="50">
                 <img src="img/feed_1.png" alt="feed_foto_1" class="feeds__item__photo">
                 <div class="feeds__item__text-wrapper">
                     <h4 class="feeds__item__title">Ирина Иванченко</h4>
@@ -376,7 +377,7 @@
                 </div>
             </div>
 
-        <div class="feeds__item">
+        <div class="feeds__item flipInX wow" data-wow-offset="50">
             <img src="img/feed_2.png" alt="feed_foto_2" class="feeds__item__photo">
             <div class="feeds__item__text-wrapper">
                 <h4 class="feeds__item__title">Иван Сёмочкин</h4>
@@ -390,7 +391,7 @@
             </div>
         </div>
 
-        <div class="feeds__item">
+        <div class="feeds__item flipInX wow" data-wow-offset="50">
             <img src="img/feed_3.png" alt="feed_foto_3" class="feeds__item__photo">
             <div class="feeds__item__text-wrapper">
                 <h4 class="feeds__item__title">Юлия Дашкина</h4>
@@ -443,7 +444,7 @@
         <div class="footer__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3648093166603!2d37.64585874186496!3d55.769535653388786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1578513362671!5m2!1sru!2sru" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
-        <div class="footer__info">
+        <div class="footer__info wow fadeIn" data-wow-delay="1s" data-wow-duration="3s">
             <address class="footer__address">Москва, Мясницкий проезд, д.3с1</address>
             <a href="tel:84999228974" class="footer__phone-link">8 (499) 922-89-74</a>
             <div class="footer__social-links">
@@ -462,6 +463,7 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>

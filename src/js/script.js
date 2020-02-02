@@ -188,12 +188,15 @@ $(document).ready(function(){
 	/* ********************arrow_to_top******************** */
 	
 	$(window).scroll(function() {
+		/* const position_of_top = $(this).scrollTop(); */
 		if ($(this).scrollTop() > 1000) {
+			/* $('.arrow-to-top').addClass('bounceInRight animated'); */
 			$('.arrow-to-top').fadeIn();
 		} else {
 			$('.arrow-to-top').fadeOut();
 		}
 	});
 	
+	new WOW().init();
 	
 });
