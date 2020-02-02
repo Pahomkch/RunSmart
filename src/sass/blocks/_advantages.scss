@@ -26,11 +26,17 @@
         font-size: 14px;
         color: $black-color;
         font-weight: 300;
+        .heartBeat {
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
         a {
             color: $main-color;
             text-transform: uppercase;
             text-decoration: underline;
         }
+
         /* &_animated {
             animation: heartbeat 1s infinite;
         } */
