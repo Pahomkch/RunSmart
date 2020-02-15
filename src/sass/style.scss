@@ -1,15 +1,12 @@
 @import 'base/variables';
 @import 'base/mixins';
-* {
-    margin: 0;
-    font-family: 'Museo Sans Cyrl 500';
-    position: relative;
-}
-.container {
-    position: relative;
-    max-width: 950px;
-    margin: 0 auto;
-}
+@import 'bootstrap-reboot.min';
+@import 'fonts';
+@import 'base/basegreed';
+@import 'animate';
+@import 'slick';
+
+
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
